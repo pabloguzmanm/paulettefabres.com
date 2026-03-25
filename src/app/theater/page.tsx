@@ -47,7 +47,7 @@ const theaterProjects = [
 
 export default function TheaterPage() {
   return (
-    <main className="flex min-h-screen flex-col bg-background">
+    <main className="flex min-h-screen flex-col bg-background overflow-x-hidden">
       <Navigation />
 
       <div className="pt-32 pb-16 px-6 md:px-12">
@@ -55,10 +55,10 @@ export default function TheaterPage() {
           <p className="text-primary font-mono text-xs tracking-widest mb-6">
             PROYECTOS
           </p>
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tighter mb-8">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tighter mb-8 text-white">
             <span className="block text-primary">TEATRO</span>
           </h1>
-          <p className="text-lg text-muted-foreground max-w-2xl">
+          <p className="text-base md:text-lg text-muted-foreground max-w-2xl leading-relaxed">
             Una selección de obras teatrales que exploran distintos personajes y
             lenguajes escénicos.
           </p>
@@ -73,8 +73,8 @@ export default function TheaterPage() {
               key={project.id}
               className="group border-t border-border pt-12"
             >
-              {/* Photo Gallery */}
-              <div className="grid grid-cols-4 gap-3 mb-6">
+              {/* Photo Gallery - Corregido a 2 columnas en móvil y 4 en desktop */}
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6">
                 {Array.from({ length: project.photoCount }).map((_, i) => (
                   <div key={i} className="aspect-[4/3] overflow-hidden bg-card">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -89,10 +89,10 @@ export default function TheaterPage() {
                 ))}
               </div>
 
-              {/* Info */}
-              <div className="flex items-end justify-between gap-4">
-                <div>
-                  <div className="flex items-center gap-3 mb-2">
+              {/* Info - Corregido layout flex para evitar desbordamiento */}
+              <div className="flex flex-col md:flex-row items-start md:items-end justify-between gap-4">
+                <div className="min-w-0 w-full">
+                  <div className="flex flex-wrap items-center gap-2 md:gap-3 mb-2">
                     <span className="font-mono text-xs text-primary">
                       {project.year}
                     </span>
@@ -104,16 +104,18 @@ export default function TheaterPage() {
                     <span className="font-mono text-xs text-muted-foreground">
                       {project.role}
                     </span>
-                    <span className="text-muted-foreground">•</span>
-                    <span className="font-mono text-xs text-muted-foreground">
+                    <span className="text-muted-foreground hidden md:inline">
+                      •
+                    </span>
+                    <span className="font-mono text-xs text-muted-foreground w-full md:w-auto">
                       Dir. {project.director}
                     </span>
                   </div>
-                  <h3 className="text-white text-2xl md:text-4xl font-bold tracking-tight group-hover:text-primary transition-colors duration-300">
+                  <h3 className="text-white text-2xl md:text-4xl font-bold tracking-tight group-hover:text-primary transition-colors duration-300 break-words">
                     {project.title}
                   </h3>
                 </div>
-                <span className="text-6xl md:text-8xl font-bold text-muted-foreground/10 group-hover:text-primary/20 transition-colors duration-300 flex-shrink-0">
+                <span className="text-6xl md:text-8xl font-bold text-muted-foreground/10 group-hover:text-primary/20 transition-colors duration-300 flex-shrink-0 self-end md:self-auto">
                   {String(project.id).padStart(2, "0")}
                 </span>
               </div>
@@ -126,7 +128,7 @@ export default function TheaterPage() {
       <div className="py-24 px-6 md:px-12 bg-card">
         <div className="container mx-auto text-center">
           <p className="text-xs font-mono text-primary tracking-widest mb-6">
-            INTERESADO EN ALGÚN PROYECTO?
+            ¿INTERESADO EN ALGÚN PROYECTO?
           </p>
           <h2 className=" text-white text-3xl md:text-5xl font-bold tracking-tight mb-8">
             <span>Cuéntame sobre tu idea</span>

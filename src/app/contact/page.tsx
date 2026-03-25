@@ -7,8 +7,13 @@ import { Footer } from "@/components/Footer";
 const contactInfo = [
   {
     label: "Email",
-    value: "contato@paulettefabres.com",
-    href: "mailto:contato@paulettefabres.com",
+    value: "contacto@paulettefabres.com",
+    href: "mailto:contacto@paulettefabres.com",
+  },
+  {
+    label: "Teléfono",
+    value: "+34 614 396 422",
+    href: "tel:+34614396422",
   },
 ];
 
