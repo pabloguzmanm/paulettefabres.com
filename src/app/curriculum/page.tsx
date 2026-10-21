@@ -94,7 +94,8 @@ const experienciaTeatral = {
   arteDramatico: [
     {
       rol: "Actriz y dramaturga",
-      proyecto: "Era una vez un bosque, Nave 73",
+      proyecto:
+        "Era una vez un bosque, Nave 73\nFestival ChileEscénicas, Umbral de Primavera - 2026",
       director: "Compañía El Bosque",
       year: "2025",
     },
@@ -246,7 +247,7 @@ function ExperienceRow({
     <div className="flex items-start justify-between gap-2 py-3 border-b border-border/40 hover:border-primary/40 transition-colors duration-300">
       <div className="flex flex-col min-w-0 gap-0.5">
         <span className="font-mono text-xs text-primary">{rol}</span>
-        <span className="text-foreground font-medium text-sm break-words">
+        <span className="text-foreground font-medium text-sm break-words whitespace-pre-line">
           {proyecto}
         </span>
         <span className="text-muted-foreground text-xs hidden md:block">
