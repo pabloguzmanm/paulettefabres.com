@@ -16,6 +16,12 @@ const skills = [
 const experienciaAudiovisual = {
   ficcion: [
     {
+      rol: "Actriz de reparto",
+      proyecto: "Serie Los Hilos del Miedo",
+      director: "Prime Video",
+      year: "2026",
+    },
+    {
       rol: "Protagonista",
       proyecto: "Cortometraje Future Chile",
       director: "Rodrigo Roblero",
@@ -76,6 +82,12 @@ const experienciaAudiovisual = {
   ],
   publicidad: [
     {
+      rol: "Protagonista",
+      proyecto: "Publicidad Pollos Popeyes",
+      director: "Hawai Films",
+      year: "2026",
+    },
+    {
       rol: "Secundaria",
       proyecto: "Publicidad Volkswagen",
       director: "Lee Films",
@@ -92,6 +104,12 @@ const experienciaAudiovisual = {
 
 const experienciaTeatral = {
   arteDramatico: [
+    {
+      rol: "Actriz y dramaturga",
+      proyecto:"Nuevo Mundo - clasicOFF, Tarambana",
+      director: "Compañía El Bosque",
+      year: "2026",
+    },
     {
       rol: "Actriz y dramaturga",
       proyecto:
