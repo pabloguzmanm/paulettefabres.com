@@ -59,7 +59,7 @@ export default function VideobookPage() {
               {/* Video */}
               <div className="relative w-full aspect-video">
                 <iframe
-                  src="https://www.youtube.com/embed/72a7YAqIfvk?autoplay=1&mute=1&loop=1&playlist=72a7YAqIfvk&controls=1&modestbranding=1"
+                  src="https://www.youtube.com/embed/2h8mUcpVwK0?si=iK-7QmYjooESxL5c"
                   title="Reel Principal"
                   allow="autoplay; encrypted-media"
                   allowFullScreen
