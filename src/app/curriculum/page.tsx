@@ -268,7 +268,7 @@ function ExperienceRow({
         <span className="text-foreground font-medium text-sm break-words whitespace-pre-line">
           {proyecto}
         </span>
-        <span className="text-muted-foreground text-xs hidden md:block">
+        <span className="text-muted-foreground text-xs">
           — {director}
         </span>
       </div>
