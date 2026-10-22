@@ -17,7 +17,7 @@ function HeroSection() {
           playsInline
           className="w-full h-full object-cover"
         >
-          <source src="public/videos/reel_header_sitio_web.mp4" type="video/mp4" />
+          <source src="/videos/reel_header_sitio_web.mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/40 to-background" />
       </div>
