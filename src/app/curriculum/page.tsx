@@ -107,7 +107,7 @@ const experienciaTeatral = {
     {
       rol: "Actriz y dramaturga",
       proyecto:"Nuevo Mundo - clasicOFF, Tarambana",
-      director: "Compañía El Bosque",
+      director: "Diego Hernandez",
       year: "2026",
     },
     {
